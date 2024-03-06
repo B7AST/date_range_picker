@@ -6,7 +6,7 @@ function TableDisplay() {
   const displayData = JsonData.map((info, index) => {
     return (
       <tr key={index} className="text-center even:bg-yellow-100 hover:bg-yellow-300">
-        <td className="w-[1rem]">{index}</td>
+        <td className="w-[1rem]"><input type="checkbox" checked></input></td>
         <td>{info.DateTime}</td>
         <td>{info.ENTSOE_DE_DAM_Price}</td>
         <td>{info.ENTSOE_GR_DAM_Price}</td>
