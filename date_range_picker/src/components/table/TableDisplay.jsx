@@ -1,9 +1,8 @@
 import React from "react";
-import JsonData from "../../api/timeseries.json";
 
-function TableDisplay() {
+function TableDisplay({data}) {
 
-  const displayData = JsonData.map((info, index) => {
+  const displayData = data.map((info, index) => {
     return (
       <tr key={index} className="text-center even:bg-yellow-100 hover:bg-yellow-300">
         <td className="w-[1rem]"><input type="checkbox" checked></input></td>
