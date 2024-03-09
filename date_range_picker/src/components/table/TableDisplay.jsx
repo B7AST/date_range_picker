@@ -1,11 +1,17 @@
 import React from "react";
 
-function TableDisplay({data}) {
-
+// this component is responsible for rendering a table displaying data passed to it as a prop.
+// Each row in the table corresponds to an element in the data array, and the table headers define the columns to display.
+function TableDisplay({ data }) {
   const displayData = data.map((info, index) => {
     return (
-      <tr key={index} className="text-center even:bg-yellow-100 hover:bg-yellow-300">
-        <td className="w-[1rem]"><input type="checkbox" checked></input></td>
+      <tr
+        key={index}
+        className="text-center even:bg-yellow-100 hover:bg-yellow-300"
+      >
+        <td>
+          <input type="checkbox"></input>
+        </td>
         <td>{info.DateTime}</td>
         <td>{info.ENTSOE_DE_DAM_Price}</td>
         <td>{info.ENTSOE_GR_DAM_Price}</td>
