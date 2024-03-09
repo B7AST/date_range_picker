@@ -1,3 +1,5 @@
+// this component renders two date input fields with labels for filtering data.
+// It uses Tailwind CSS for styling and relies on props (filters and setFilters) to manage the state of the date filters.
 function DateInputs({filters, setFilters}) {
 
   let inputStyling = "border rounded-md px-1";
